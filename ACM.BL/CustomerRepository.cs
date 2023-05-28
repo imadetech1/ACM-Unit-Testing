@@ -8,6 +8,12 @@ namespace ACM.BL
 {
     public class CustomerRepository
     {
+        public CustomerRepository() 
+        {
+            addressRepository = new AddressRepository();
+        }
+        private AddressRepository addressRepository { get; set; }
+
 
         /// <summary>
         /// Validate the address data.
@@ -27,6 +33,8 @@ namespace ACM.BL
                 customer.EmailAddress = "fbaggins@hobbiton.me";
                 customer.FirstName = "Frodo";
                 customer.LastName = "Baggins";
+                customer.AddressList = addressRepository.RetrieveByCustomerId(customerId).
+                                                ToList();
             }
         return customer;
         }

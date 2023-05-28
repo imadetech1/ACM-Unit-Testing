@@ -19,7 +19,7 @@ namespace ACM.BL
     public DateTimeOffset? OrderDate { get; set; }
     public int OrderId { get;private set; }
 
-        /// <summary>
+        /// <summary>u 88 
         /// Validates the order data.
         /// </summary>
         /// <returns></returns>
