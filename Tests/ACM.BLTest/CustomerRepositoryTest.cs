@@ -56,6 +56,7 @@ namespace ACM.BLTest
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);
             Assert.AreEqual(expected.FirstName, actual.FirstName);
             Assert.AreEqual(expected.LastName, actual.LastName);
+           
 
             for (int i = 0; i < 1; i++)
             {
