@@ -19,6 +19,7 @@ namespace ACM.BL
         }
         public List<Address> AddressList { get; set; }
         public int CustomerId { get; private set; }
+        public int CustomerType { get; set; }
         public string EmailAddress { get; set; }
         public string FirstName { get; set; }
        
@@ -35,6 +36,9 @@ namespace ACM.BL
                 _lastname = value;
             }
         }
+
+
+        public override string ToString() => FirstName;
 
         /// <summary>
         ///  Validates the customer data.
